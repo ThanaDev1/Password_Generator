@@ -6,9 +6,6 @@ import java.util.*;
 public class passwd {
     public static void main(String[] args) {
 
-        // variables sql insert
-        String sql = "insert into datos(passw,descrip) values()";
-
         // variable de salida
         String password = "";
         LocalDate fecha = LocalDate.now();
@@ -71,18 +68,6 @@ public class passwd {
         // creacion de escritura en el fichero
         String fichero = password + " -> " + descripcion + " -> " + fecha.toString() + "\n";
         fichero += "--------------------------------------------------\n";
-
-
-        // escritura en el fichero
-        /*
-        try {
-            FileWriter fw = new FileWriter(ruta, true);
-            fw.write(fichero);
-            fw.close();
-        } catch (Exception e) {
-            System.out.println("Error al escribir en el fichero");
-        }
-        */
 
         System.out.println("Programa finalizado");
 
